@@ -1,0 +1,8 @@
+Per a verificar que el teu disseny és correcte, efectua les següents consultes i comprova
+que retornen resultats correctes:
+
+ Òptica:
+
+  - Llista el total de compres d’un client/a.
+  - Llista les diferents ulleres que ha venut un empleat durant un any.
+  - Llista els diferents proveïdors que han subministrat ulleres venudes amb èxit per l'òptica.

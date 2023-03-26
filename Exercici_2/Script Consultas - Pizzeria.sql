@@ -1,0 +1,2 @@
+SELECT COUNT(producto.id_producto) AS bebidas_pedidas FROM comanda LEFT JOIN comanda_productos ON comanda.id_comanda = comanda_productos.comanda_id LEFT JOIN producto ON comanda_productos.producto_id = producto.id_producto WHERE producto.tipo="bebida"
+SELECT *, COUNT(id_comanda) AS comandas_hechas_Maria FROM comanda WHERE trabajador_id=1

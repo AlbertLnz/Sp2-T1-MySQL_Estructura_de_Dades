@@ -1,0 +1,7 @@
+Per a verificar que el teu disseny és correcte, efectua les següents consultes i comprova
+que retornen resultats correctes:
+
+ Pizzeria:
+
+  - Llista quants productes de tipus “Begudes” s'han venut en una determinada localitat.
+  - Llista quantes comandes ha efectuat un determinat empleat/da.

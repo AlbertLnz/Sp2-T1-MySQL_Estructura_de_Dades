@@ -1,0 +1,29 @@
+T’han contractat per a dissenyar una web que permeti fer comandes de menjar a domicili per Internet.
+
+ · Tingues en compte les següents indicacions per a modelar com seria la base de dades del projecte:
+ · Per a cada client/a emmagatzemem un identificador únic: Nom, cognoms, adreça, codi postal,
+   localitat, província, número de telèfon.
+ · Una persona pot realitzar moltes comandes, però una única comanda només pot ser realitzat per una
+   única persona. De cada comanda s'emmagatzema un identificador únic: Data/hora, si la comanda és per
+   a repartiment a domicili o per a recollir en botiga, la quantitat de productes que s'han seleccionat
+   de cada tipus, el preu total.
+
+Una comanda pot constar d'un o diversos productes.
+
+ · Els productes poden ser pizzes, hamburgueses i begudes. De cada producte s'emmagatzema un
+   identificador únic: Nom, descripció, imatge, preu.
+
+En el cas de les pizzes existeixen diverses categories que poden anar canviant de nom al llarg de l'any.
+Una pizza només pot estar dins d'una categoria, però una categoria pot tenir moltes pizzes.
+
+ · De cada categoria s'emmagatzema un identificador únic i un nom. Una comanda és gestionada per una
+   única botiga i una botiga pot gestionar moltes comandes. De cada botiga s'emmagatzema un identificador
+   únic: Adreça, codi postal, localitat, província.
+ · En una botiga poden treballar molts empleats/des i un empleat/da només pot treballar en una botiga.
+   De cada empleat/da, s'emmagatzema un identificador únic: Nom, cognoms, NIF, Telèfon.
+ · Si treballa com a cuiner/a o repartidor/a. Per a les comandes de repartiment a domicili interessa
+   guardar qui és el repartidor/a que fa el lliurament de la comanda i la data/hora del moment del lliurament.
+
+
+
+
