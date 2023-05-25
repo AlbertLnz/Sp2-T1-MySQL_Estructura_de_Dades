@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.0
+-- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 01-05-2023 a las 16:16:02
--- Versión del servidor: 10.4.27-MariaDB
--- Versión de PHP: 8.2.0
+-- Tiempo de generación: 25-05-2023 a las 09:51:06
+-- Versión del servidor: 10.4.28-MariaDB
+-- Versión de PHP: 8.2.4
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de datos: `pizzeria_v4`
+-- Base de datos: `pizzeria`
 --
 
 -- --------------------------------------------------------
@@ -120,17 +120,18 @@ INSERT INTO `comanda` (`comanda_id`, `client_id`, `botiga_id`, `treballador_id`,
 
 CREATE TABLE `llista_comanda` (
   `id_comanda` int(5) NOT NULL,
-  `producte_id` int(5) NOT NULL
+  `producte_id` int(5) NOT NULL,
+  `product_quantity` int(5) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Volcado de datos para la tabla `llista_comanda`
 --
 
-INSERT INTO `llista_comanda` (`id_comanda`, `producte_id`) VALUES
-(2, 2),
-(2, 1),
-(2, 3);
+INSERT INTO `llista_comanda` (`id_comanda`, `producte_id`, `product_quantity`) VALUES
+(2, 2, 0),
+(2, 1, 0),
+(2, 3, 0);
 
 -- --------------------------------------------------------
 
